@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import seedu.linkedout.model.Linkedout;
 import seedu.linkedout.model.applicant.Applicant;
 
 import static seedu.linkedout.logic.commands.CommandTestUtil.*;
@@ -48,6 +49,17 @@ public class TypicalApplicants {
     public static final String KEYWORD_MATCHING_MEIER = "Meier"; // A keyword that matches MEIER
 
     private TypicalApplicants() {} // prevents instantiation
+
+    /**
+     * Returns an {@code AddressBook} with all the typical applicants.
+     */
+    public static Linkedout getTypicalLinkedout() {
+        Linkedout l = new Linkedout();
+        for (Applicant applicant : getTypicalApplicants()) {
+            l.addApplicant(applicant);
+        }
+        return l;
+    }
 
     public static List<Applicant> getTypicalApplicants() {
         return new ArrayList<>(Arrays.asList(ALICE, BENSON, CARL, DANIEL, ELLE, FIONA, GEORGE));

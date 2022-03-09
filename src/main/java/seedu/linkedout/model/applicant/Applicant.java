@@ -4,6 +4,7 @@ import static seedu.linkedout.commons.util.CollectionUtil.requireAllNonNull;
 
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 import seedu.linkedout.model.job.Job;
@@ -11,7 +12,7 @@ import seedu.linkedout.model.job.Stage;
 import seedu.linkedout.model.tag.Tag;
 
 /**
- * Represents an Applicant in LinkedOUT
+ * Represents an Applicant in linkedout.
  * Guarantees: details are present and not null, field values are validated, immutable.
  */
 public class Applicant {
@@ -101,5 +102,30 @@ public class Applicant {
                 && otherApplicant.getJob().equals(getJob())
                 && otherApplicant.getStage().equals(getStage())
                 && otherApplicant.getTags().equals(getTags());
+    }
+
+    @Override
+    public int hashCode() {
+        // use this method for custom fields hashing instead of implementing your own
+        return Objects.hash(name, phone, email, address, tags);
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder builder = new StringBuilder();
+        builder.append(getName())
+                .append("; Phone: ")
+                .append(getPhone())
+                .append("; Email: ")
+                .append(getEmail())
+                .append("; Address: ")
+                .append(getAddress());
+
+        Set<Tag> tags = getTags();
+        if (!tags.isEmpty()) {
+            builder.append("; Tags: ");
+            tags.forEach(builder::append);
+        }
+        return builder.toString();
     }
 }
