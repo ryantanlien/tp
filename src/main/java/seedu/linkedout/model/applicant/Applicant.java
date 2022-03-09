@@ -107,7 +107,7 @@ public class Applicant {
     @Override
     public int hashCode() {
         // use this method for custom fields hashing instead of implementing your own
-        return Objects.hash(name, phone, email, address, tags);
+        return Objects.hash(name, phone, email, job, stage, tags);
     }
 
     @Override
@@ -118,8 +118,10 @@ public class Applicant {
                 .append(getPhone())
                 .append("; Email: ")
                 .append(getEmail())
-                .append("; Address: ")
-                .append(getAddress());
+                .append("; Job: ")
+                .append(getJob())
+                .append("; Stage: ")
+                .append(getStage());
 
         Set<Tag> tags = getTags();
         if (!tags.isEmpty()) {
