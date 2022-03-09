@@ -7,7 +7,18 @@ import java.util.List;
 import seedu.linkedout.model.Linkedout;
 import seedu.linkedout.model.applicant.Applicant;
 
-import static seedu.linkedout.logic.commands.CommandTestUtil.*;
+import static seedu.linkedout.logic.commands.CommandTestUtil.VALID_EMAIL_AMY;
+import static seedu.linkedout.logic.commands.CommandTestUtil.VALID_EMAIL_BOB;
+import static seedu.linkedout.logic.commands.CommandTestUtil.VALID_JOB_AMY;
+import static seedu.linkedout.logic.commands.CommandTestUtil.VALID_JOB_BOB;
+import static seedu.linkedout.logic.commands.CommandTestUtil.VALID_NAME_AMY;
+import static seedu.linkedout.logic.commands.CommandTestUtil.VALID_NAME_BOB;
+import static seedu.linkedout.logic.commands.CommandTestUtil.VALID_PHONE_AMY;
+import static seedu.linkedout.logic.commands.CommandTestUtil.VALID_PHONE_BOB;
+import static seedu.linkedout.logic.commands.CommandTestUtil.VALID_STAGE_AMY;
+import static seedu.linkedout.logic.commands.CommandTestUtil.VALID_STAGE_BOB;
+import static seedu.linkedout.logic.commands.CommandTestUtil.VALID_TAG_FRIEND;
+import static seedu.linkedout.logic.commands.CommandTestUtil.VALID_TAG_HUSBAND;
 
 /**
  * A utility class containing a list of {@code Applicant} objects to be used in tests.
