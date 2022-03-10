@@ -46,29 +46,38 @@ public class StageTest {
 
     @Test
     public void isValidStage_nonAlphaNumeric_false() {
-        char character = 33;
-        while (character < 48) {
+        final int ASCII_CHARACTER_EXCLAMATION_MARK = 33;
+        final int ASCII_CHARACTER_BACKSLASH = 47;
+        final int ASCII_CHARACTER_COLON = 58;
+        final int ASCII_CHARACTER_AT = 64;
+        final int ASCII_CHARACTER_SQUARE_BRACKET = 91;
+        final int ASCII_CHARACTER_BACK_TICK = 96;
+        final int ASCII_CHARACTER_LEFT_CURLY_BRACE = 123;
+        final int ASCII_CHARACTER_DEL = 127;
+
+        char character = ASCII_CHARACTER_EXCLAMATION_MARK;
+        while (character <= ASCII_CHARACTER_BACKSLASH) {
             String stageValue = String.valueOf(character);
             assertFalse(isValidStage(stageValue));
             character++;
         }
 
-        character = 58;
-        while (character < 65) {
+        character = ASCII_CHARACTER_COLON;
+        while (character <= ASCII_CHARACTER_AT) {
             String stageValue = String.valueOf(character);
             assertFalse(isValidStage(stageValue));
             character++;
         }
 
-        character = 91;
-        while (character < 97) {
+        character = ASCII_CHARACTER_SQUARE_BRACKET;
+        while (character < ASCII_CHARACTER_BACK_TICK) {
             String stageValue = String.valueOf(character);
             assertFalse(isValidStage(stageValue));
             character++;
         }
 
-        character = 123;
-        while (character < 128) {
+        character = ASCII_CHARACTER_LEFT_CURLY_BRACE;
+        while (character < ASCII_CHARACTER_DEL) {
             String stageValue = String.valueOf(character);
             assertFalse(isValidStage(stageValue));
             character++;
