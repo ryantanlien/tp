@@ -10,7 +10,6 @@ import java.util.logging.Logger;
 
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
-import javafx.collections.transformation.SortedList;
 import seedu.linkedout.commons.core.GuiSettings;
 import seedu.linkedout.commons.core.LogsCenter;
 import seedu.linkedout.model.applicant.Applicant;
@@ -26,7 +25,6 @@ public class ModelManager implements Model {
     private final Linkedout linkedout;
     private final UserPrefs userPrefs;
     private final FilteredList<Applicant> filteredApplicants;
-    private final SortedList<Applicant> sortedApplicants;
 
     /**
      * Initializes a ModelManager with the given linkedout app and userPrefs.
@@ -39,7 +37,6 @@ public class ModelManager implements Model {
         this.linkedout = new Linkedout(linkedout);
         this.userPrefs = new UserPrefs(userPrefs);
         filteredApplicants = new FilteredList<Applicant>(this.linkedout.getApplicantList());
-        sortedApplicants = new SortedList<>(filteredApplicants);
     }
 
     public ModelManager() {
@@ -156,15 +153,7 @@ public class ModelManager implements Model {
         ModelManager other = (ModelManager) obj;
         return linkedout.equals(other.linkedout)
                 && userPrefs.equals(other.userPrefs)
-                && filteredApplicants.equals(other.filteredApplicants)
-                && sortedApplicants.equals(other.sortedApplicants);
-    }
-
-    //=========== Sorted Applicant List Accessors =============================================================
-
-    @Override
-    public ObservableList<Applicant> getSortedApplicantList() {
-        return sortedApplicants;
+                && filteredApplicants.equals(other.filteredApplicants);
     }
 
     //=========== Search Applicant List Accessors =============================================================
@@ -173,9 +162,9 @@ public class ModelManager implements Model {
     public void updateSearchedApplicantList(List<KeywordsPredicate> predicates) {
         requireNonNull(predicates);
         Predicate<Applicant> keywordPredicate = combinePredicates(predicates);
-        updateFilteredApplicantList(keywordPredicate);
-        sortedApplicants.setComparator((applicant1, applicant2) -> numberOfKeywordMatches(applicant2, predicates)
+        linkedout.sort((applicant1, applicant2) -> numberOfKeywordMatches(applicant2, predicates)
                 - numberOfKeywordMatches(applicant1, predicates));
+        updateFilteredApplicantList(keywordPredicate);
     }
 
     /**

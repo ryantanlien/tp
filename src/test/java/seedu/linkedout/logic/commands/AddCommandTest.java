@@ -157,11 +157,6 @@ public class AddCommandTest {
         }
 
         @Override
-        public ObservableList<Applicant> getSortedApplicantList() {
-            throw new AssertionError("This method should not be called.");
-        }
-
-        @Override
         public void updateSearchedApplicantList(List<KeywordsPredicate> predicates) {
             throw new AssertionError("This method should not be called.");
         }
