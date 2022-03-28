@@ -4,6 +4,7 @@ import static java.util.Objects.requireNonNull;
 import static seedu.linkedout.commons.util.CollectionUtil.requireAllNonNull;
 
 import java.nio.file.Path;
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.logging.Logger;
@@ -108,6 +109,10 @@ public class ModelManager implements Model {
     public void addApplicant(Applicant applicant) {
         linkedout.addApplicant(applicant);
         updateFilteredApplicantList(PREDICATE_SHOW_ALL_APPLICANTS);
+        updateSortedApplicantList((a1, a2) -> 0);
+        // update list to sort when adding applicant
+        // need to set applicantList sort to new filteredApplicant list
+        // non null comparator in order for it to update?
     }
 
     @Override
@@ -138,8 +143,23 @@ public class ModelManager implements Model {
     public void updateFilteredApplicantList(Predicate<Applicant> predicate) {
         requireNonNull(predicate);
         filteredApplicants.setPredicate(predicate);
+        sortedApplicants.setComparator(null);
+        // so that list will not become permanently sorted
     }
 
+    //=========== Sorted Applicant List Accessors =============================================================
+    /**
+     * Returns an unmodifiable view of the list of {@code Applicant} backed by the internal list of
+     * {@code versionedLinkedout}
+     */
+
+    @Override
+    public void updateSortedApplicantList(Comparator<Applicant> comparator) {
+        requireNonNull(comparator);
+        sortedApplicants.setComparator(comparator);
+    }
+
+    //===========
     @Override
     public boolean equals(Object obj) {
         // short circuit if same object

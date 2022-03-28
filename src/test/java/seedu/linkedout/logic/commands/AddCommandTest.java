@@ -9,6 +9,7 @@ import static seedu.linkedout.testutil.Assert.assertThrows;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -158,6 +159,11 @@ public class AddCommandTest {
 
         @Override
         public ObservableList<Applicant> getSortedApplicantList() {
+            throw new AssertionError("This method should not be called.");
+        }
+
+        @Override
+        public void updateSortedApplicantList(Comparator<Applicant> comparator) {
             throw new AssertionError("This method should not be called.");
         }
 
