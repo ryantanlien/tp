@@ -33,6 +33,7 @@ public interface Logic {
     /** Returns an unmodifiable view of the filtered list of applicants */
     ObservableList<Applicant> getFilteredApplicantList();
 
+    ObservableList<Applicant> getSortedApplicantList();
     /**
      * Returns the user prefs' linkedout app file path.
      */
