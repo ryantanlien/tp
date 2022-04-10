@@ -319,9 +319,9 @@ The addskill mechanism is facililated by `AddSkillCommandParser`.
 
 As the skills being passed are checked in `AddSkillCommandParser` and `Skill` upon instantiation, skills parsed can contain a mix of symbols and alphanumeric. They must also be made up of 1 to 5 words.
 
-The following activity diagram shows the workflow for the addskill operation:
-
 <div style="page-break-after: always;"></div>
+
+The following activity diagram shows the workflow for the addskill operation:
 
 ![AddSkillActivityDiagram](images/AddSkillCommandActivityDiagram.png)
 
