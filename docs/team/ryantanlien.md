@@ -57,9 +57,10 @@ Given below are my contributions to the project.
     * Setting up GitHub Team Repo.
     * Setting up Jekyll and GitHub project website using GitHub Pages
   * Set up v1.3 Product Demo in project management document.
-    
   
 <br>
+
+<div style = "page-break-after: always;"></div>
 
 * **Review/mentoring contributions**
   * Reviewed team PRs to ensure proper code architecture (Pull request [\#121](https://github.com/AY2122S2-CS2103T-T09-2/tp/pull/121))
