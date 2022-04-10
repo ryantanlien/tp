@@ -442,6 +442,9 @@ Example:
 ```
 edit 1 p/91234567 e/yeoh.99@example.com s/Rust
 ```
+
+<br>
+
 Sample Output:
 
 ![editcommand](images/ug/editcommand.png)
