@@ -780,6 +780,8 @@ does not have any formatting issues.**
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
     
 **Use case 2: View an individual applicant**
 
@@ -825,6 +827,8 @@ does not have any formatting issues.**
 2. LinkedOUT shows the list of applicant(s) with the skill or job, in descending order of matched attribute.
 
    Use case ends.
+
+<div style="page-break-after: always;"></div>
 
 **Extensions**
 
