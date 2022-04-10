@@ -1420,3 +1420,5 @@ The commands in code blocks for this section are meant to be inputted in one lin
       Expected: The app starts with an empty list of applicants.
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
+
+---
