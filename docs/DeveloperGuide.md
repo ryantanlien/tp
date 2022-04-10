@@ -185,6 +185,8 @@ The Sequence Diagram below illustrates the interactions within the `Logic` compo
 This limitation extends to the rest of our diagrams which are of the same type.
 </div>
 
+<div style="page-break-after: always;"></div>
+
 Here are the other classes in `Logic` (omitted from the class diagram above) that are used for parsing a user command:
 
 <img src="images/ParserClasses.png" width="600"/>
@@ -264,6 +266,8 @@ The following activity diagram shows the workflow for the add operation:
  **Note:** There should only be one arrowhead at the end of every line
 in the Activity Diagram. This is a known limitation of PlantUML. This limitation extends to the rest of our diagrams which are of the same type.
 </div>
+
+<div style="page-break-after: always;"></div>
 
 Given below is an example usage scenario of how an applicant is added, and how the operation is handled by LinkedOUT:
 
@@ -489,6 +493,8 @@ The following sequence diagram shows how the view operation works:
     * Pros: Less strict matching.
     * Cons: Users are unable to single out a certain applicant.
 
+<div style="page-break-after: always;"></div>
+
 Weighing the pros and cons of these alternatives, we have decided to abstract alternative 2 as a different feature under `search`.
 This is to allow our target user to have greater flexibility, and we believe both are important features to be implemented.
 
@@ -546,6 +552,8 @@ Example 2
 The following sequence diagram shows how the search operation works:
 
 ![SearchSequenceDiagram](images/SearchSequenceDiagram.png)
+
+<div style="page-break-after: always;"></div>
 
 **Design considerations**:
 
@@ -733,6 +741,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Use cases
 
 (For all use cases below, the System is LinkedOUT, and the Actor is the user unless specified otherwise)
