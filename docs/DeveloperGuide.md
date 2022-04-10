@@ -1113,6 +1113,8 @@ testers are expected to do more *exploratory* testing.
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### Adding an applicant
 
 <div markdown="block" class="alert alert-info">
@@ -1191,6 +1193,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### Editing an applicant
 
 1. Editing an applicant while all applicants are being shown in the *GUI*.
@@ -1229,6 +1233,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### View an applicant
 
 1. View an applicant while all applicants are being shown in the *GUI*.
@@ -1256,6 +1262,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Searching for applicant(s)
 
@@ -1295,6 +1303,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### Sorting list of applicants
 
 1. Sorting the list of applicants temporarily while all applicants are being shown.
@@ -1320,6 +1330,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Flagging an applicant
 
@@ -1348,6 +1360,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### Deleting an applicant
 
 1. Deleting an applicant while all applicants are being shown in the *GUI*.
@@ -1366,6 +1380,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Clearing the application
 
