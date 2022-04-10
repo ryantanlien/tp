@@ -195,6 +195,9 @@ Example:
 ```
 help
 ```
+
+<div style="page-break-after: always;"></div>
+
 Sample Output:
 
 ![helpcommand](images/ug/helpcommand.png)
@@ -228,6 +231,9 @@ Example:
 ```
 add n/Bob p/99999999 e/bob@example.com j/Data Analyst r/Interview s/Pandas s/Python
 ```
+
+<div style="page-break-after: always;"></div>
+
 Sample Output:
 
 ![addcommand](images/ug/addcommand.png)
@@ -255,6 +261,9 @@ Example:
 ```
 list
 ```
+
+<div style="page-break-after: always;"></div>
+
 Sample Output:
 
 ![listcommand](images/ug/listcommand.png)
@@ -291,6 +300,9 @@ Example:
 ```
 view Bernice Yu
 ```
+
+<div style="page-break-after: always;"></div>
+
 Sample Output:
 
 ![viewcommand](images/ug/viewcommand.png)
@@ -332,6 +344,9 @@ Example:
 ```
 search n/Roy s/Java
 ```
+
+<div style="page-break-after: always;"></div>
+
 Sample Output:
 
 ![searchcommand](images/ug/searchcommand.png)
@@ -353,7 +368,6 @@ Format:
 addskill INDEX [s/SKILL]…
 ```
 
-
 * Index of applicant specified must not be more than the total number of applicants in LinkedOUT. <br>
   e.g If there are only `4` applicants in the app but `5` is specified, then the addition will not be carried out as it is invalid.
 * Index of applicant specified must be a positive number. <br>
@@ -367,6 +381,9 @@ Example:
 ```
 addskill 1 s/React s/Vue
 ```
+
+<div style="page-break-after: always;"></div>
+
 Sample Output:
 
 ![addskillcommand](images/ug/addskillcommand.png)
@@ -407,6 +424,8 @@ edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [j/JOB] [r/ROUND] [s/SKILL]…​
 
 <br>
 
+<div style="page-break-after: always;"></div>
+
 Example:
 ```
 edit 1 p/91234567 e/yeoh.99@example.com s/Rust
@@ -446,6 +465,9 @@ Example:
 ```
 sort f/job o/asc
 ```
+
+<div style="page-break-after: always;"></div>
+
 Sample Output:
 
 ![sortcommand](images/ug/sortcommand.png)
@@ -483,6 +505,9 @@ Example:
 ```
 flag 1
 ```
+
+<div style="page-break-after: always;"></div>
+
 Sample Output:
 
 ![flagcommand](images/ug/flagcommand.png)
@@ -493,6 +518,8 @@ Extended Example for unflagging:
 ```
 flag 1
 ```
+
+<div style="page-break-after: always;"></div>
 
 Extended Sample Output for unflagging:
 
@@ -548,6 +575,9 @@ Example:
 ```
 delete 1
 ```
+
+<div style="page-break-after: always;"></div>
+
 Sample Output:
 
 ![deletecommand](images/ug/deletecommand.png)
@@ -579,6 +609,8 @@ Example:
 ```
 clear 
 ```
+
+<div style="page-break-after: always;"></div>
 
 Sample Output:
 
@@ -648,6 +680,9 @@ If your changes to the data file makes its format invalid, LinkedOUT will discar
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 
 ## Command summary
 
