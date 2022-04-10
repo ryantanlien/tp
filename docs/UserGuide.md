@@ -501,18 +501,20 @@ Try flagging the first applicant by typing `flag 1`. You should see it at the to
 
 <br>
 
+<div style="page-break-after: always;"></div>
+
 Example:
 ```
 flag 1
 ```
-
-<div style="page-break-after: always;"></div>
 
 Sample Output:
 
 ![flagcommand](images/ug/flagcommand.png)
 
 <br>
+
+<div style="page-break-after: always;"></div>
 
 Extended Example for unflagging:
 ```
@@ -526,6 +528,8 @@ Extended Sample Output for unflagging:
 ![unflagcommand](images/ug/unflaggedcommand.png)
 
 <br>
+
+<div style="page-break-after: always;"></div>
 
 <div markdown="block" class="alert alert-info">
 
@@ -702,6 +706,3 @@ If your changes to the data file makes its format invalid, LinkedOUT will discar
 | **Exit**   | `exit`                                                                                                                                                |
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
-
-
-
