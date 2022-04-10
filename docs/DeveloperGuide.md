@@ -870,6 +870,9 @@ does not have any formatting issues.**
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 **Use case 5: Delete an applicant**
 
 **Preconditions: LinkedOUT application is launched.**
