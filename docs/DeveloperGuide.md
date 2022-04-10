@@ -406,6 +406,8 @@ The following sequence diagram shows how the edit operation works:
 
 ![EditSequenceDiagram](images/EditSequenceDiagram.png)
 
+<div style="page-break-after: always;"></div>
+
 **Design considerations**
 
 **Aspect: How edit executes:**
@@ -421,6 +423,9 @@ The following sequence diagram shows how the edit operation works:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### View applicant feature
 
 **Rationale**
