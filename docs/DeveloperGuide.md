@@ -557,6 +557,8 @@ The following sequence diagram shows how the search operation works:
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### Sort applicant feature
 
 **Rationale**
@@ -605,6 +607,8 @@ The following sequence diagram shows how the sort operation works:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Flag applicant feature
 
