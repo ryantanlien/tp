@@ -731,5 +731,6 @@ If your changes to the data file makes its format invalid, LinkedOUT will discar
 | **Flag**   | `flag INDEX` <br> e.g:  `flag 1`                                                                                                                      |
 | **Delete** | `delete INDEX` <br> e.g: `delete 1`                                                                                                                   |
 | **Clear**  | `clear`                                                                                                                                               |
-| **Exit**   | `exit`                                                                                                                                                |
+| **Exit**   | `exit`         
+
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
