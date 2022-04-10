@@ -282,6 +282,8 @@ LinkedOUT. upon completion of the check, `Model#addApplicant()` to add the new a
 5. The command is complete and a `CommandResult` containing the details of the new applicant as a String is returned to
 the user.
 
+<div style="page-break-after: always;"></div>
+
 The following sequence diagram shows how the add operation works:
 
 ![AddSequenceDiagram](images/AddSequenceDiagram.png)
@@ -318,6 +320,8 @@ The addskill mechanism is facililated by `AddSkillCommandParser`.
 As the skills being passed are checked in `AddSkillCommandParser` and `Skill` upon instantiation, skills parsed can contain a mix of symbols and alphanumeric. They must also be made up of 1 to 5 words.
 
 The following activity diagram shows the workflow for the addskill operation:
+
+<div style="page-break-after: always;"></div>
 
 ![AddSkillActivityDiagram](images/AddSkillCommandActivityDiagram.png)
 
