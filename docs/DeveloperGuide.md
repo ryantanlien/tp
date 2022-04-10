@@ -1184,8 +1184,6 @@ The commands in code blocks for this section are meant to be inputted in one lin
        ```
        Expected: No changes occur as an applicant named Bob is already in the list, and duplicate applicants with the same names are not allowed.
 
-    <div style="page-break-after: always;"></div>
-
     4. Test case:
        ```
        add 
@@ -1330,8 +1328,6 @@ The commands in code blocks for this section are meant to be inputted in one lin
 
     9. Test case: `search n/Amy j/Engineer`<br>
        Expected: Both applicants are displayed in the list and the order of applicant shown is based on the original list. In this case, `Bob Tan` is shown above `Amy Tan`.
-
-    <div style="page-break-after: always;"></div>
 
     10. Other incorrect search commands to try: `search`, `Search`, `search Bob`, `search w/Bob`, `search n/`<br>
         Expected: No applicant is displayed. Error details shown in the status message.
