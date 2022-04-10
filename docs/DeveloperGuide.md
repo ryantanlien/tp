@@ -705,8 +705,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 | `* * *`  | Busy recruiter                                  | search an applicant in the system by name.                                | have an overview of applicant's particulars                       |
 | `* * *`  | Busy recruiter                                  | search an applicant in the system by job, skill and round.                | find the applicant with desired job, skill and round quickly      |
 | `* * *`  | Familiar user and busy recruiter                | to be able to search the applicants by job applied                        | view who is interviewing for the job and what rounds they are at. |
-| `* *`    | Recruiter that deals with large amounts of data | sort the applicant in the system by name                                  | easily view by applicants in alphabetical order                   |
-| `* *`    | Recruiter that deals with large amounts of data | sort the applicant in the system by job applied                           | easily view by job applied in alphabetical order                  |
+| `* *`    | Recruiter that deals with large amounts of data | sort the applicants in the system by name                                 | easily view by applicant name in alphabetical order               |
+| `* *`    | Recruiter that deals with large amounts of data | sort the applicants in the system by job applied                          | easily view by job applied in alphabetical order                  |
 | `* *`    | Busy recruiter                                  | see what round of the job application a particular applicant is at        | keep track of their progress                                      |
 | `* *`    | Recruiter                                       | add skills to existing skills that the applicant has                      | keep track of an applicant's updated skill set                    |
 | `* *`    | Experienced recruiter                           | flag an applicant                                                         | quickly refer to their info in the future                         |
