@@ -23,6 +23,9 @@ Given below are my contributions to the project.
   
 <br>
 
+<div style = "page-break-after: always;"></div>
+
+
 * **Enchancements Implemented**:
   * Performed initial large-scale refactoring to starting AB3 project in file structure to pave foundation for AB3's modification into LinkedOUT.
     (Pull request [\#36](https://github.com/AY2122S2-CS2103T-T09-2/tp/pull/36)) 
