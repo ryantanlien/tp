@@ -690,6 +690,8 @@ If your changes to the data file makes its format invalid, LinkedOUT will discar
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## FAQ
 
 **Q**: How do I transfer my data to another Computer?<br>
