@@ -1166,6 +1166,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### Add skills to an applicant
 
 1. Adding a skill to an applicant while all applicants are being shown in the *GUI*.
@@ -1380,8 +1382,6 @@ The commands in code blocks for this section are meant to be inputted in one lin
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
-
-<div style="page-break-after: always;"></div>
 
 ### Clearing the application
 
