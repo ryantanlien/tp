@@ -139,8 +139,6 @@ Cautions are placed in this guide to serve as warnings for certain actions.
 
 </div>
 
-<br>
-
 <div markdown="block" class="alert alert-info">
 **:information_source: Notes about sample output:**
 The sample output shown in this guide is for illustration purposes only.
@@ -155,6 +153,8 @@ The actual GUI might differ slightly depending on whether Windows/ Mac is used.
 ---
 ### GUI Introduction
 ![GUIintroduction](images/ug/ui-with-intro-annotation.png)
+
+[Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
 ### Prefix and Input Summary
@@ -176,6 +176,9 @@ The table below illustrates the meaning of the prefixes and their respective inp
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Viewing help : `help`
 
 Shows you a message explaining how to access the help page.
@@ -200,6 +203,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Adding an applicant: `add`
 
 Allows you to add a new applicant to the LinkedOUT application with the following information:
@@ -230,6 +236,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Listing all applicants : `list`
 
 Allows you to list out all job applicants, along with an overview of each applicant.
@@ -254,6 +263,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Viewing a specific applicant : `view`
 
 Allows you to view a specific applicant, by inputting the applicant's **full name**.
@@ -287,6 +299,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Searching for an applicant : `search`
 
 Allows you to search for applicants containing the input attributes and the attribute has to be an exact word. You can search for the applicant based on
@@ -325,6 +340,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Adding skills to an applicant: `addskill`
 
 Allows you to add skills to a specific applicant. The index number used corresponds to the one in the displayed applicant list. This command does not replace any pre-existing skills.
@@ -357,6 +375,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Editing an applicant : `edit`
 
 Allows you to edit specific details of the applicant identified by the index number. The index number used corresponds to the one in the displayed applicant list. 
@@ -398,6 +419,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Sorting applicants : `sort`
 
 Allows you to sort the list of applicants **temporarily** by name or by job. That is to say, the list will not stay sorted if you were to use other commands following sort.
@@ -430,6 +454,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Flagging an applicant : `flag`
 
 Allows you to flag an applicant identified by the index number. The index number used corresponds to the one in the displayed applicant list. Flagged applicants will appear at the top of the list and are identified with a flag symbol.
@@ -493,6 +520,9 @@ except after search and view commands. <br>
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Deleting an applicant : `delete`
 
 Allows you to delete a specific applicant, specified by index.
@@ -526,6 +556,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Clearing the applicants : `clear`
 
 Clears the list of applicants.
@@ -556,6 +589,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Exiting the program : `exit`
 
 Exits the program.
