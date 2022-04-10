@@ -1332,6 +1332,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
     10. Other incorrect search commands to try: `search`, `Search`, `search Bob`, `search w/Bob`, `search n/`<br>
         Expected: No applicant is displayed. Error details shown in the status message.
 
+<div style="page-break-after: always;"></div>
+
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
