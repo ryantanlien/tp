@@ -157,7 +157,7 @@ The actual GUI might differ slightly depending on whether Windows/ Mac is used.
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Prefix and Input Summary
 
