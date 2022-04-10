@@ -31,6 +31,8 @@ If you would like to learn more about the technical aspects of our application i
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
+
 ## Legend
 
 <div markdown="block" class="alert alert-info">
