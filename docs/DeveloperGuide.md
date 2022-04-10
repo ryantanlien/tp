@@ -375,6 +375,8 @@ The following sequence diagram shows how the addskill operation works:
     * Pros: One lesser command needed.
     * Cons: Adds extra complexity in code as well as for the user.
 
+[Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
+
 ---
 
 <div style="page-break-after: always;"></div>
