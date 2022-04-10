@@ -645,6 +645,8 @@ The following sequence diagram shows how the flag operation works:
 
 ![FlagSequenceDiagram](images/FlagSequenceDiagram.png)
 
+<div style="page-break-after: always;"></div>
+
 **Design considerations**
 
 **Aspect: How flag executes:**
@@ -671,6 +673,8 @@ The following sequence diagram shows how the flag operation works:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## **Appendix: Requirements**
 
@@ -1041,6 +1045,9 @@ does not have any formatting issues.**
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Non-Functional Requirements
 
 1.  Technical: The application should work on any _mainstream OS_ as long as it has Java `11` or above installed.
