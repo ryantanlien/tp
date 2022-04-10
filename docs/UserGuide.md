@@ -156,6 +156,9 @@ The actual GUI might differ slightly depending on whether Windows/ Mac is used.
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div markdown="block" class="alert alert-info">
+
 ### Prefix and Input Summary
 
 The table below illustrates the meaning of the prefixes and their respective inputs
@@ -346,14 +349,14 @@ You can try searching for multiple attributes in the applicant list. Try `search
 the name `Alex` or skill `Java`!
 </div>
 
+<div style="page-break-after: always;"></div>
+
 <br>
 
 Example:
 ```
 search n/Roy s/Java
 ```
-
-<div style="page-break-after: always;"></div>
 
 <br>
 
@@ -729,5 +732,4 @@ If your changes to the data file makes its format invalid, LinkedOUT will discar
 | **Delete** | `delete INDEX` <br> e.g: `delete 1`                                                                                                                   |
 | **Clear**  | `clear`                                                                                                                                               |
 | **Exit**   | `exit`                                                                                                                                                |
-
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
