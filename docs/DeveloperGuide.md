@@ -298,6 +298,8 @@ The following sequence diagram shows how the add operation works:
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### Add Skill feature
 
 **Rationale**
