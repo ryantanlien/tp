@@ -37,6 +37,8 @@ If you would like to learn how to use the application instead, you can do so by 
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## **Legend for Boxes**
 
 <div markdown="block" class="alert alert-info">
@@ -77,6 +79,8 @@ Refer to the guide [_Setting up and getting started_](SettingUp.md).
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## **Legend for Diagrams**
 
