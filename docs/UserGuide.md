@@ -145,13 +145,12 @@ The sample output shown in this guide is for illustration purposes only.
 The actual GUI might differ slightly depending on whether Windows/ Mac is used.
 </div>
 
-<br>
-
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
 ### GUI Introduction
+
 ![GUIintroduction](images/ug/ui-with-intro-annotation.png)
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
@@ -177,7 +176,7 @@ The table below illustrates the meaning of the prefixes and their respective inp
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Viewing help : `help`
 
@@ -204,7 +203,7 @@ Sample Output:
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Adding an applicant: `add`
 
@@ -237,7 +236,7 @@ Sample Output:
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Listing all applicants : `list`
 
@@ -264,7 +263,7 @@ Sample Output:
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Viewing a specific applicant : `view`
 
@@ -300,7 +299,7 @@ Sample Output:
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Searching for an applicant : `search`
 
@@ -341,7 +340,7 @@ Sample Output:
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Adding skills to an applicant: `addskill`
 
@@ -376,7 +375,7 @@ Sample Output:
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Editing an applicant : `edit`
 
@@ -420,7 +419,7 @@ Sample Output:
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Sorting applicants : `sort`
 
@@ -455,7 +454,7 @@ Sample Output:
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Flagging an applicant : `flag`
 
@@ -521,7 +520,7 @@ except after search and view commands. <br>
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Deleting an applicant : `delete`
 
@@ -557,7 +556,7 @@ Sample Output:
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Clearing the applicants : `clear`
 
@@ -590,7 +589,7 @@ Sample Output:
 
 ---
 
-<div markdown="block" class="alert alert-info">
+<div style="page-break-after: always;"></div>
 
 ### Exiting the program : `exit`
 
