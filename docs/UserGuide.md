@@ -58,7 +58,7 @@ Cautions are placed in this guide to serve as warnings for certain actions.
 1. Ensure you have Java `11` or above installed on your Computer.
 
 
-2. Download the latest `LinkedOUT.jar` from [here](https://github.com/AY2122S2-CS2103T-T09-2/tp/releases/tag/v1.3(trial)).
+2. Download the latest `LinkedOUT.jar` from [here](https://github.com/AY2122S2-CS2103T-T09-2/tp/releases/tag/v1.4).
 
 
 3. Copy the file to the folder you want to use as the _home folder_ for LinkedOUT.
@@ -66,7 +66,7 @@ Cautions are placed in this guide to serve as warnings for certain actions.
 
 4. **For Windows:** Double-click the file to start the app.<br>
    **For Mac:** Open up a [terminal](https://www.maketecheasier.com/launch-terminal-current-folder-mac/) in the current folder which contains the LinkedOUT jar file <br>
-   Then, run the following command: <br>
+   Then, run the following command to open the file that you have downloaded in step 2: <br>
    ```java -jar LinkedOUT.jar``` 
    
     <br>
