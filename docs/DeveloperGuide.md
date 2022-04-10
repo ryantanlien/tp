@@ -347,6 +347,8 @@ Given below is an example usage scenario of how an applicant is edited.
 
 7. It then calls upon `CommandResult` to display the final result on the *GUI*.
 
+<div style="page-break-after: always;"></div>
+
 The following sequence diagram shows how the addskill operation works:
 
 ![AddSkillSequenceDiagram](images/AddSkillCommandSequenceDiagram.png)
@@ -364,6 +366,8 @@ The following sequence diagram shows how the addskill operation works:
     * Cons: Adds extra complexity in code as well as for the user.
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Edit applicant feature
 
@@ -480,6 +484,9 @@ This is to allow our target user to have greater flexibility, and we believe bot
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Search applicant feature
 
 **Rationale**
