@@ -198,6 +198,8 @@ help
 
 <div style="page-break-after: always;"></div>
 
+<br>
+
 Sample Output:
 
 ![helpcommand](images/ug/helpcommand.png)
@@ -234,6 +236,8 @@ add n/Bob p/99999999 e/bob@example.com j/Data Analyst r/Interview s/Pandas s/Pyt
 
 <div style="page-break-after: always;"></div>
 
+<br>
+
 Sample Output:
 
 ![addcommand](images/ug/addcommand.png)
@@ -263,6 +267,8 @@ list
 ```
 
 <div style="page-break-after: always;"></div>
+
+<br>
 
 Sample Output:
 
@@ -302,6 +308,8 @@ view Bernice Yu
 ```
 
 <div style="page-break-after: always;"></div>
+
+<br>
 
 Sample Output:
 
@@ -347,6 +355,8 @@ search n/Roy s/Java
 
 <div style="page-break-after: always;"></div>
 
+<br>
+
 Sample Output:
 
 ![searchcommand](images/ug/searchcommand.png)
@@ -383,6 +393,8 @@ addskill 1 s/React s/Vue
 ```
 
 <div style="page-break-after: always;"></div>
+
+<br>
 
 Sample Output:
 
@@ -422,9 +434,9 @@ edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [j/JOB] [r/ROUND] [s/SKILL]…​
   </div>
 * At least one attribute must be provided to be edited. i.e. `edit INDEX` is an invalid command.
 
-<br>
-
 <div style="page-break-after: always;"></div>
+
+<br>
 
 Example:
 ```
@@ -468,6 +480,8 @@ sort f/job o/asc
 
 <div style="page-break-after: always;"></div>
 
+<br>
+
 Sample Output:
 
 ![sortcommand](images/ug/sortcommand.png)
@@ -499,29 +513,31 @@ flag INDEX
 Try flagging the first applicant by typing `flag 1`. You should see it at the top with a flag symbol. Then try un-flagging the same applicant with `flag 1`.
 </div>
 
-<br>
-
 <div style="page-break-after: always;"></div>
+
+<br>
 
 Example:
 ```
 flag 1
 ```
 
+<br>
+
 Sample Output:
 
 ![flagcommand](images/ug/flagcommand.png)
 
-<br>
-
 <div style="page-break-after: always;"></div>
+
+<br>
 
 Extended Example for unflagging:
 ```
 flag 1
 ```
 
-<div style="page-break-after: always;"></div>
+<br>
 
 Extended Sample Output for unflagging:
 
@@ -582,6 +598,8 @@ delete 1
 
 <div style="page-break-after: always;"></div>
 
+<br>
+
 Sample Output:
 
 ![deletecommand](images/ug/deletecommand.png)
@@ -615,6 +633,8 @@ clear
 ```
 
 <div style="page-break-after: always;"></div>
+
+<br>
 
 Sample Output:
 
