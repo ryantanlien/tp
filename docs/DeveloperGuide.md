@@ -27,9 +27,9 @@ LinkedOUT comes with a Command Line Interface *CLI* as well as a Graphical User 
 
 This developer guide is meant for those who wish to understand the architecture and design considerations of LinkedOUT.
 
-Certain technical terms are specified in *italics*. If you need to reference what they mean, you can do so by referring to our [Glossary](https://ay2122s2-cs2103t-t09-2.github.io/tp/DeveloperGuide.html#glossary).
+Certain technical terms are specified in *italics*. If you need to reference what they mean, you can do so by referring to our [Glossary](#glossary).
 
-If you would like to learn more about the target group and how the application addresses their concerns, skip ahead to the [Requirements](https://ay2122s2-cs2103t-t09-2.github.io/tp/DeveloperGuide.html#appendix-requirements).
+If you would like to learn more about the target group and how the application addresses their concerns, skip ahead to the [Requirements](#appendix-requirements).
 
 If you would like to learn how to use the application instead, you can do so by reading our [User Guide](https://ay2122s2-cs2103t-t09-2.github.io/tp/UserGuide.html).
 
@@ -115,6 +115,8 @@ Given below is a quick overview of main components and how they interact with ea
 
 [**`Commons`**](#common-classes) represents a collection of classes used by multiple other components.
 
+<div style="page-break-after: always;"></div>
+
 The rest of the App consists of four components.
 
 * [**`UI`**](#ui-component): The UI of the App.
@@ -132,7 +134,7 @@ The *Sequence Diagram* below shows how the components interact with each other f
 Each of the four main components (also shown in the diagram above),
 
 * defines its *API* in an `interface` with the same name as the Component.
-* implements its functionality using a concrete `{Component Name}Manager` class (which follows the corresponding API `interface` mentioned in the previous point.
+* implements its functionality using a concrete `{Component Name}Manager` class (which follows the corresponding *API* `interface` mentioned in the previous point.
 
 For example, the `Logic` component defines its *API* in the `Logic.java` interface and implements its functionality using the `LogicManager.java` class which follows the `Logic` interface. Other components interact with a given component through its interface rather than the concrete class (reason: to prevent outside component's being coupled to the implementation of a component), as illustrated in the (partial) class diagram below.
 
@@ -227,8 +229,8 @@ The `Model` component,
 <img src="images/StorageClassDiagram.png" width="550" />
 
 The `Storage` component,
-* can save both LinkedOUT application data and user preference data in json format, and read them back into corresponding objects.
-* inherits from both `LinkedoutStorage` and `UserPrefStorage`, which means it can be treated as either one (if only the functionality of only one is needed).
+* can save both LinkedOUT application data and user preference data in *JSON* format, and read them back into corresponding objects.
+* inherits from both `LinkedoutStorage` and `UserPrefStorage`, which mans it can be treated as either one (if only the functionality of only one is needed).
 * depends on some classes in the `Model` component (because the `Storage` component's job is to save/retrieve objects that belong to the `Model`)
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
@@ -705,7 +707,7 @@ The following sequence diagram shows how the flag operation works:
 * Interaction level : Interacts with the applicants
 
 
-**Value proposition**: Simple and easy-to-use tool for recruiter to LinkedOUT to applicants and manage the applicant's information efficiently.
+**Value proposition**: Simple and easy-to-use tool for recruiters to manage applicants' information efficiently.
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
@@ -834,7 +836,7 @@ does not have any formatting issues.**
 
 **Extensions**
 
-* 1a. Applicant does not exist
+* 1a. Applicant does not exist.
 
     * 1a1. LinkedOUT shows 0 applicant listed.
 
@@ -842,7 +844,7 @@ does not have any formatting issues.**
 
 * 1b. User provides an invalid input to search for applicant(s).
 
-    * 1b1. LinkedOUT shows an error message
+    * 1b1. LinkedOUT shows an error message.
 
       Use case resumes at step 1.
 
@@ -996,7 +998,7 @@ does not have any formatting issues.**
 
 * 3a. User inputs invalid skill(s) or index.
 
-    * 3a1. LinkedOUT shows an error message
+    * 3a1. LinkedOUT shows an error message.
 
       Use case resumes at step 3.
 
@@ -1013,8 +1015,8 @@ does not have any formatting issues.**
 
 **MSS**
 
-1. User requests to flag an applicant
-2. LinkedOUT shows the updated list of applicants
+1. User requests to flag an applicant.
+2. LinkedOUT shows the updated list of applicants.
 
    Use case ends.
 
@@ -1022,9 +1024,9 @@ does not have any formatting issues.**
 
 **Extensions**
 
-* 1a. User inputs invalid applicant index
+* 1a. User inputs invalid applicant index.
 
-    * 1a1. LinkedOUT shows an error message
+    * 1a1. LinkedOUT shows an error message.
 
       Use case resumes at step 1.
       
@@ -1041,16 +1043,16 @@ does not have any formatting issues.**
 
 **MSS**
 
-1. User requests to unflag an applicant
-2. LinkedOUT shows the updated list of applicants
+1. User requests to unflag an applicant.
+2. LinkedOUT shows the updated list of applicants.
 
    Use case ends.
 
 **Extensions**
 
-* 1a. User inputs invalid applicant index
+* 1a. User inputs invalid applicant index.
 
-    * 1a1. LinkedOUT shows an error message
+    * 1a1. LinkedOUT shows an error message.
 
       Use case resumes at step 1.
       
@@ -1069,7 +1071,7 @@ does not have any formatting issues.**
 
 **MSS**
 
-1. User requests to clear all applicants from the list
+1. User requests to clear all applicants from the list.
 2. LinkedOUT clears the list of all applicants.
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
