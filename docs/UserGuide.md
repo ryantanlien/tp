@@ -8,6 +8,8 @@ title: User Guide
 {:toc}
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## Introduction
 
 **What is LinkedOUT?**
@@ -29,6 +31,8 @@ If you would like to learn more about the technical aspects of our application i
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
+
 ## Legend
 
 <div markdown="block" class="alert alert-info">
@@ -54,7 +58,7 @@ Cautions are placed in this guide to serve as warnings for certain actions.
 1. Ensure you have Java `11` or above installed on your Computer.
 
 
-2. Download the latest `LinkedOUT.jar` from [here](https://github.com/AY2122S2-CS2103T-T09-2/tp/releases/tag/v1.3(trial)).
+2. Download the latest `LinkedOUT.jar` from [here](https://github.com/AY2122S2-CS2103T-T09-2/tp/releases/tag/v1.4).
 
 
 3. Copy the file to the folder you want to use as the _home folder_ for LinkedOUT.
@@ -62,7 +66,7 @@ Cautions are placed in this guide to serve as warnings for certain actions.
 
 4. **For Windows:** Double-click the file to start the app.<br>
    **For Mac:** Open up a [terminal](https://www.maketecheasier.com/launch-terminal-current-folder-mac/) in the current folder which contains the LinkedOUT jar file <br>
-   Then, run the following command: <br>
+   Then, run the following command to open the file that you have downloaded in step 2: <br>
    ```java -jar LinkedOUT.jar``` 
    
     <br>
@@ -135,24 +139,26 @@ Cautions are placed in this guide to serve as warnings for certain actions.
 
 </div>
 
-<br>
-
 <div markdown="block" class="alert alert-info">
 **:information_source: Notes about sample output:**
 The sample output shown in this guide is for illustration purposes only.
 The actual GUI might differ slightly depending on whether Windows/ Mac is used.
 </div>
 
-<br>
-
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
 ### GUI Introduction
+
 ![GUIintroduction](images/ug/ui-with-intro-annotation.png)
 
+[Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
+
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Prefix and Input Summary
 
 The table below illustrates the meaning of the prefixes and their respective inputs
@@ -172,6 +178,9 @@ The table below illustrates the meaning of the prefixes and their respective inp
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Viewing help : `help`
 
 Shows you a message explaining how to access the help page.
@@ -189,6 +198,11 @@ Example:
 ```
 help
 ```
+
+<div style="page-break-after: always;"></div>
+
+<br>
+
 Sample Output:
 
 ![helpcommand](images/ug/helpcommand.png)
@@ -196,6 +210,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Adding an applicant: `add`
 
 Allows you to add a new applicant to the LinkedOUT application with the following information:
@@ -219,6 +236,11 @@ Example:
 ```
 add n/Bob p/99999999 e/bob@example.com j/Data Analyst r/Interview s/Pandas s/Python
 ```
+
+<div style="page-break-after: always;"></div>
+
+<br>
+
 Sample Output:
 
 ![addcommand](images/ug/addcommand.png)
@@ -226,6 +248,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Listing all applicants : `list`
 
 Allows you to list out all job applicants, along with an overview of each applicant.
@@ -243,6 +268,11 @@ Example:
 ```
 list
 ```
+
+<div style="page-break-after: always;"></div>
+
+<br>
+
 Sample Output:
 
 ![listcommand](images/ug/listcommand.png)
@@ -250,6 +280,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Viewing a specific applicant : `view`
 
 Allows you to view a specific applicant, by inputting the applicant's **full name**.
@@ -276,6 +309,11 @@ Example:
 ```
 view Bernice Yu
 ```
+
+<div style="page-break-after: always;"></div>
+
+<br>
+
 Sample Output:
 
 ![viewcommand](images/ug/viewcommand.png)
@@ -283,6 +321,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Searching for an applicant : `search`
 
 Allows you to search for applicants containing the input attributes and the attribute has to be an exact word. You can search for the applicant based on
@@ -308,12 +349,17 @@ You can try searching for multiple attributes in the applicant list. Try `search
 the name `Alex` or skill `Java`!
 </div>
 
+<div style="page-break-after: always;"></div>
+
 <br>
 
 Example:
 ```
 search n/Roy s/Java
 ```
+
+<br>
+
 Sample Output:
 
 ![searchcommand](images/ug/searchcommand.png)
@@ -321,6 +367,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Adding skills to an applicant: `addskill`
 
 Allows you to add skills to a specific applicant. The index number used corresponds to the one in the displayed applicant list. This command does not replace any pre-existing skills.
@@ -332,12 +381,11 @@ Format:
 addskill INDEX [s/SKILL]…
 ```
 
-
 * Index of applicant specified must not be more than the total number of applicants in LinkedOUT. <br>
   e.g If there are only `4` applicants in the app but `5` is specified, then the addition will not be carried out as it is invalid.
 * Index of applicant specified must be a positive number. <br>
   e.g As we label our applicants incrementally starting from `1` (e.g `1, 2, 3, and so on`), an index of `-1` will not be tagged to an applicant and the addition will not be carried out as it is invalid.
-* If you would like to replace or remove certain skills instead, consider using [`edit`](https://ay2122s2-cs2103t-t09-2.github.io/tp/UserGuide.html#editing-an-applicant--edit).
+* If you would like to replace or remove certain skills instead, consider using `edit`.
 * At least one skill must be provided to be added. i.e. `addskill INDEX` is an invalid command.
 
 <br>
@@ -346,6 +394,11 @@ Example:
 ```
 addskill 1 s/React s/Vue
 ```
+
+<div style="page-break-after: always;"></div>
+
+<br>
+
 Sample Output:
 
 ![addskillcommand](images/ug/addskillcommand.png)
@@ -353,6 +406,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Editing an applicant : `edit`
 
 Allows you to edit specific details of the applicant identified by the index number. The index number used corresponds to the one in the displayed applicant list. 
@@ -372,7 +428,7 @@ edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [j/JOB] [r/ROUND] [s/SKILL]…​
   e.g As we label our applicants incrementally starting from `1` (e.g `1, 2, 3, and so on`), an index of `-1` will not be tagged to an applicant and the edit will not be carried out as it is invalid.
 * As an applicant can have more than 1 skill, you may remove skills using `edit` as illustrated by the following example: <br>
   e.g An applicant has skills `Excel`, `Word`, `Docs`. To remove the skill `Excel`, you may type the following command. `edit INDEX s/Word s/Docs`.
-* You may also add skills using `edit`. However, a simpler way of doing so would be to use our alternative command [`addskill`](https://ay2122s2-cs2103t-t09-2.github.io/tp/UserGuide.html#adding-skills-to-an-applicant-addskill).
+* You may also add skills using `edit`. However, a simpler way of doing so would be to use our alternative command `addskill`.
   <br> To add skills with `edit`, you may do so as illustrated by the following example: <br>
   e.g An applicant has skill `Excel`. To add the skills `Word` and `Docs`, you may type the following command. `edit INDEX s/Excel s/Word s/Docs`.
 * You can remove all of an applicant's skills by simply typing `edit INDEX s/` without adding anything behind `s/`. <br>
@@ -381,12 +437,17 @@ edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [j/JOB] [r/ROUND] [s/SKILL]…​
   </div>
 * At least one attribute must be provided to be edited. i.e. `edit INDEX` is an invalid command.
 
+<div style="page-break-after: always;"></div>
+
 <br>
 
 Example:
 ```
 edit 1 p/91234567 e/yeoh.99@example.com s/Rust
 ```
+
+<br>
+
 Sample Output:
 
 ![editcommand](images/ug/editcommand.png)
@@ -394,6 +455,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Sorting applicants : `sort`
 
 Allows you to sort the list of applicants **temporarily** by name or by job. That is to say, the list will not stay sorted if you were to use other commands following sort.
@@ -419,6 +483,11 @@ Example:
 ```
 sort f/job o/asc
 ```
+
+<div style="page-break-after: always;"></div>
+
+<br>
+
 Sample Output:
 
 ![sortcommand](images/ug/sortcommand.png)
@@ -426,6 +495,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Flagging an applicant : `flag`
 
 Allows you to flag an applicant identified by the index number. The index number used corresponds to the one in the displayed applicant list. Flagged applicants will appear at the top of the list and are identified with a flag symbol.
@@ -447,15 +519,22 @@ flag INDEX
 Try flagging the first applicant by typing `flag 1`. You should see it at the top with a flag symbol. Then try un-flagging the same applicant with `flag 1`.
 </div>
 
+<div style="page-break-after: always;"></div>
+
 <br>
 
 Example:
 ```
 flag 1
 ```
+
+<br>
+
 Sample Output:
 
 ![flagcommand](images/ug/flagcommand.png)
+
+<div style="page-break-after: always;"></div>
 
 <br>
 
@@ -464,11 +543,15 @@ Extended Example for unflagging:
 flag 1
 ```
 
+<br>
+
 Extended Sample Output for unflagging:
 
 ![unflagcommand](images/ug/unflaggedcommand.png)
 
 <br>
+
+<div style="page-break-after: always;"></div>
 
 <div markdown="block" class="alert alert-info">
 
@@ -489,6 +572,9 @@ except after search and view commands. <br>
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Deleting an applicant : `delete`
 
 Allows you to delete a specific applicant, specified by index.
@@ -515,6 +601,11 @@ Example:
 ```
 delete 1
 ```
+
+<div style="page-break-after: always;"></div>
+
+<br>
+
 Sample Output:
 
 ![deletecommand](images/ug/deletecommand.png)
@@ -522,6 +613,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Clearing the applicants : `clear`
 
 Clears the list of applicants.
@@ -544,6 +638,10 @@ Example:
 clear 
 ```
 
+<div style="page-break-after: always;"></div>
+
+<br>
+
 Sample Output:
 
 ![clearcommand](images/ug/clearcommand.png)
@@ -552,6 +650,9 @@ Sample Output:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Exiting the program : `exit`
 
 Exits the program.
@@ -592,6 +693,8 @@ If your changes to the data file makes its format invalid, LinkedOUT will discar
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## FAQ
 
 **Q**: How do I transfer my data to another Computer?<br>
@@ -610,6 +713,9 @@ If your changes to the data file makes its format invalid, LinkedOUT will discar
 
 ---
 
+<div style="page-break-after: always;"></div>
+
+
 ## Command summary
 
 | Action     | Format, Examples                                                                                                                                      |
@@ -625,9 +731,6 @@ If your changes to the data file makes its format invalid, LinkedOUT will discar
 | **Flag**   | `flag INDEX` <br> e.g:  `flag 1`                                                                                                                      |
 | **Delete** | `delete INDEX` <br> e.g: `delete 1`                                                                                                                   |
 | **Clear**  | `clear`                                                                                                                                               |
-| **Exit**   | `exit`                                                                                                                                                |
+| **Exit**   | `exit`         
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
-
-
-
