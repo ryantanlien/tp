@@ -9,6 +9,8 @@ title: Developer Guide
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## **Introduction**
 
 **What is LinkedOUT?**
@@ -25,15 +27,17 @@ LinkedOUT comes with a Command Line Interface *CLI* as well as a Graphical User 
 
 This developer guide is meant for those who wish to understand the architecture and design considerations of LinkedOUT.
 
-Certain technical terms are specified in *italics*. If you need to reference what they mean, you can do so by referring to our [Glossary](https://ay2122s2-cs2103t-t09-2.github.io/tp/DeveloperGuide.html#glossary).
+Certain technical terms are specified in *italics*. If you need to reference what they mean, you can do so by referring to our [Glossary](#glossary).
 
-If you would like to learn more about the target group and how the application addresses their concerns, skip ahead to the [Requirements](https://ay2122s2-cs2103t-t09-2.github.io/tp/DeveloperGuide.html#appendix-requirements).
+If you would like to learn more about the target group and how the application addresses their concerns, skip ahead to the [Requirements](#appendix-requirements).
 
 If you would like to learn how to use the application instead, you can do so by reading our [User Guide](https://ay2122s2-cs2103t-t09-2.github.io/tp/UserGuide.html).
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## **Legend for Boxes**
 
@@ -65,6 +69,8 @@ Refer to the guide [_Setting up and getting started_](SettingUp.md).
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## **Design**
 
 <div markdown="block" class="alert alert-info">
@@ -91,6 +97,8 @@ The colour used in the diagrams may vary in shade, but still belong to one of th
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### Architecture
 
 <img src="images/ArchitectureDiagram.png" width="280" />
@@ -106,6 +114,8 @@ Given below is a quick overview of main components and how they interact with ea
 * At shut down: Shuts down the components and invokes cleanup methods where necessary.
 
 [**`Commons`**](#common-classes) represents a collection of classes used by multiple other components.
+
+<div style="page-break-after: always;"></div>
 
 The rest of the App consists of four components.
 
@@ -124,7 +134,7 @@ The *Sequence Diagram* below shows how the components interact with each other f
 Each of the four main components (also shown in the diagram above),
 
 * defines its *API* in an `interface` with the same name as the Component.
-* implements its functionality using a concrete `{Component Name}Manager` class (which follows the corresponding API `interface` mentioned in the previous point.
+* implements its functionality using a concrete `{Component Name}Manager` class (which follows the corresponding *API* `interface` mentioned in the previous point.
 
 For example, the `Logic` component defines its *API* in the `Logic.java` interface and implements its functionality using the `LogicManager.java` class which follows the `Logic` interface. Other components interact with a given component through its interface rather than the concrete class (reason: to prevent outside component's being coupled to the implementation of a component), as illustrated in the (partial) class diagram below.
 
@@ -135,6 +145,9 @@ The sections below give more details of each component.
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### UI component
 
 The **API** of this component is specified in [`Ui.java`](https://github.com/AY2122S2-CS2103T-T09-2/tp/blob/master/src/main/java/seedu/linkedout/ui/Ui.java)
@@ -174,6 +187,8 @@ The Sequence Diagram below illustrates the interactions within the `Logic` compo
 This limitation extends to the rest of our diagrams which are of the same type.
 </div>
 
+<div style="page-break-after: always;"></div>
+
 Here are the other classes in `Logic` (omitted from the class diagram above) that are used for parsing a user command:
 
 <img src="images/ParserClasses.png" width="600"/>
@@ -185,6 +200,9 @@ How the parsing works:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Model component
 **API** : [`Model.java`](https://github.com/AY2122S2-CS2103T-T09-2/tp/blob/master/src/main/java/seedu/linkedout/model/Model.java)
 
@@ -201,6 +219,9 @@ The `Model` component,
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Storage component
 
 **API** : [`Storage.java`](https://github.com/AY2122S2-CS2103T-T09-2/tp/blob/master/src/main/java/seedu/linkedout/storage/Storage.java)
@@ -208,8 +229,8 @@ The `Model` component,
 <img src="images/StorageClassDiagram.png" width="550" />
 
 The `Storage` component,
-* can save both LinkedOUT application data and user preference data in json format, and read them back into corresponding objects.
-* inherits from both `LinkedoutStorage` and `UserPrefStorage`, which means it can be treated as either one (if only the functionality of only one is needed).
+* can save both LinkedOUT application data and user preference data in *JSON* format, and read them back into corresponding objects.
+* inherits from both `LinkedoutStorage` and `UserPrefStorage`, which mans it can be treated as either one (if only the functionality of only one is needed).
 * depends on some classes in the `Model` component (because the `Storage` component's job is to save/retrieve objects that belong to the `Model`)
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
@@ -222,6 +243,8 @@ Classes used by multiple components are in the `seedu.linkedout.commons` package
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## **Implementation**
 
@@ -246,6 +269,8 @@ The following activity diagram shows the workflow for the add operation:
 in the Activity Diagram. This is a known limitation of PlantUML. This limitation extends to the rest of our diagrams which are of the same type.
 </div>
 
+<div style="page-break-after: always;"></div>
+
 Given below is an example usage scenario of how an applicant is added, and how the operation is handled by LinkedOUT:
 
 1. The user enters a valid add command, for example: `add n/Bob p/99991111 e/bob@mail.com j/Data Analyst r/Interview s/Python`. For each command
@@ -269,6 +294,8 @@ LinkedOUT. upon completion of the check, `Model#addApplicant()` to add the new a
 5. The command is complete and a `CommandResult` containing the details of the new applicant as a String is returned to
 the user.
 
+<div style="page-break-after: always;"></div>
+
 The following sequence diagram shows how the add operation works:
 
 ![AddSequenceDiagram](images/AddSequenceDiagram.png)
@@ -284,6 +311,8 @@ The following sequence diagram shows how the add operation works:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Add Skill feature
 
@@ -301,6 +330,8 @@ The addskill mechanism is facililated by `AddSkillCommandParser`.
 `AddSkillCommand` then searches for the applicant within the applicant list, and appends the skills to the pre-existing set.
 
 As the skills being passed are checked in `AddSkillCommandParser` and `Skill` upon instantiation, skills parsed can contain a mix of symbols and alphanumeric. They must also be made up of 1 to 5 words.
+
+<div style="page-break-after: always;"></div>
 
 The following activity diagram shows the workflow for the addskill operation:
 
@@ -328,6 +359,8 @@ Given below is an example usage scenario of how an applicant is edited.
 
 7. It then calls upon `CommandResult` to display the final result on the *GUI*.
 
+<div style="page-break-after: always;"></div>
+
 The following sequence diagram shows how the addskill operation works:
 
 ![AddSkillSequenceDiagram](images/AddSkillCommandSequenceDiagram.png)
@@ -344,7 +377,11 @@ The following sequence diagram shows how the addskill operation works:
     * Pros: One lesser command needed.
     * Cons: Adds extra complexity in code as well as for the user.
 
+[Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
+
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Edit applicant feature
 
@@ -383,6 +420,8 @@ The following sequence diagram shows how the edit operation works:
 
 ![EditSequenceDiagram](images/EditSequenceDiagram.png)
 
+<div style="page-break-after: always;"></div>
+
 **Design considerations**
 
 **Aspect: How edit executes:**
@@ -398,6 +437,9 @@ The following sequence diagram shows how the edit operation works:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### View applicant feature
 
 **Rationale**
@@ -455,12 +497,17 @@ The following sequence diagram shows how the view operation works:
     * Pros: Less strict matching.
     * Cons: Users are unable to single out a certain applicant.
 
+<div style="page-break-after: always;"></div>
+
 Weighing the pros and cons of these alternatives, we have decided to abstract alternative 2 as a different feature under `search`.
 This is to allow our target user to have greater flexibility, and we believe both are important features to be implemented.
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Search applicant feature
 
 **Rationale**
@@ -510,6 +557,8 @@ The following sequence diagram shows how the search operation works:
 
 ![SearchSequenceDiagram](images/SearchSequenceDiagram.png)
 
+<div style="page-break-after: always;"></div>
+
 **Design considerations**:
 
 **Aspect: How search executes:**
@@ -525,6 +574,8 @@ The following sequence diagram shows how the search operation works:
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Sort applicant feature
 
@@ -575,6 +626,8 @@ The following sequence diagram shows how the sort operation works:
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### Flag applicant feature
 
 **Rationale**
@@ -610,6 +663,8 @@ The following sequence diagram shows how the flag operation works:
 
 ![FlagSequenceDiagram](images/FlagSequenceDiagram.png)
 
+<div style="page-break-after: always;"></div>
+
 **Design considerations**
 
 **Aspect: How flag executes:**
@@ -637,6 +692,8 @@ The following sequence diagram shows how the flag operation works:
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## **Appendix: Requirements**
 
 ### Product scope
@@ -650,7 +707,7 @@ The following sequence diagram shows how the flag operation works:
 * Interaction level : Interacts with the applicants
 
 
-**Value proposition**: Simple and easy-to-use tool for recruiter to LinkedOUT to applicants and manage the applicant's information efficiently.
+**Value proposition**: Simple and easy-to-use tool for recruiters to manage applicants' information efficiently.
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
@@ -670,8 +727,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 | `* * *`  | Busy recruiter                                  | search an applicant in the system by name.                                | have an overview of applicant's particulars                       |
 | `* * *`  | Busy recruiter                                  | search an applicant in the system by job, skill and round.                | find the applicant with desired job, skill and round quickly      |
 | `* * *`  | Familiar user and busy recruiter                | to be able to search the applicants by job applied                        | view who is interviewing for the job and what rounds they are at. |
-| `* *`    | Recruiter that deals with large amounts of data | sort the applicant in the system by name                                  | easily view by applicants in alphabetical order                   |
-| `* *`    | Recruiter that deals with large amounts of data | sort the applicant in the system by job applied                           | easily view by job applied in alphabetical order                  |
+| `* *`    | Recruiter that deals with large amounts of data | sort the applicants in the system by name                                 | easily view by applicant name in alphabetical order               |
+| `* *`    | Recruiter that deals with large amounts of data | sort the applicants in the system by job applied                          | easily view by job applied in alphabetical order                  |
 | `* *`    | Busy recruiter                                  | see what round of the job application a particular applicant is at        | keep track of their progress                                      |
 | `* *`    | Recruiter                                       | add skills to existing skills that the applicant has                      | keep track of an applicant's updated skill set                    |
 | `* *`    | Experienced recruiter                           | flag an applicant                                                         | quickly refer to their info in the future                         |
@@ -688,6 +745,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Use cases
 
 (For all use cases below, the System is LinkedOUT, and the Actor is the user unless specified otherwise)
@@ -724,6 +784,8 @@ does not have any formatting issues.**
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
     
 **Use case 2: View an individual applicant**
 
@@ -770,9 +832,11 @@ does not have any formatting issues.**
 
    Use case ends.
 
+<div style="page-break-after: always;"></div>
+
 **Extensions**
 
-* 1a. Applicant does not exist
+* 1a. Applicant does not exist.
 
     * 1a1. LinkedOUT shows 0 applicant listed.
 
@@ -780,7 +844,7 @@ does not have any formatting issues.**
 
 * 1b. User provides an invalid input to search for applicant(s).
 
-    * 1b1. LinkedOUT shows an error message
+    * 1b1. LinkedOUT shows an error message.
 
       Use case resumes at step 1.
 
@@ -810,6 +874,9 @@ does not have any formatting issues.**
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 **Use case 5: Delete an applicant**
 
 **Preconditions: LinkedOUT application is launched.**
@@ -931,7 +998,7 @@ does not have any formatting issues.**
 
 * 3a. User inputs invalid skill(s) or index.
 
-    * 3a1. LinkedOUT shows an error message
+    * 3a1. LinkedOUT shows an error message.
 
       Use case resumes at step 3.
 
@@ -948,16 +1015,18 @@ does not have any formatting issues.**
 
 **MSS**
 
-1. User requests to flag an applicant
-2. LinkedOUT shows the updated list of applicants
+1. User requests to flag an applicant.
+2. LinkedOUT shows the updated list of applicants.
 
    Use case ends.
 
+<div style="page-break-after: always;"></div>
+
 **Extensions**
 
-* 1a. User inputs invalid applicant index
+* 1a. User inputs invalid applicant index.
 
-    * 1a1. LinkedOUT shows an error message
+    * 1a1. LinkedOUT shows an error message.
 
       Use case resumes at step 1.
       
@@ -974,22 +1043,24 @@ does not have any formatting issues.**
 
 **MSS**
 
-1. User requests to unflag an applicant
-2. LinkedOUT shows the updated list of applicants
+1. User requests to unflag an applicant.
+2. LinkedOUT shows the updated list of applicants.
 
    Use case ends.
 
 **Extensions**
 
-* 1a. User inputs invalid applicant index
+* 1a. User inputs invalid applicant index.
 
-    * 1a1. LinkedOUT shows an error message
+    * 1a1. LinkedOUT shows an error message.
 
       Use case resumes at step 1.
       
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 **Use case 11: Clear all applicants**
 
@@ -1000,12 +1071,15 @@ does not have any formatting issues.**
 
 **MSS**
 
-1. User requests to clear all applicants from the list
+1. User requests to clear all applicants from the list.
 2. LinkedOUT clears the list of all applicants.
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
+
 ### Non-Functional Requirements
 
 1.  Technical: The application should work on any _mainstream OS_ as long as it has Java `11` or above installed.
@@ -1037,6 +1111,8 @@ does not have any formatting issues.**
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## **Appendix: Instructions for manual testing**
 
 Given below are instructions to test the app manually.
@@ -1051,7 +1127,7 @@ testers are expected to do more *exploratory* testing.
 
 1. Initial launch.
 
-   1. Download the jar file and copy into an empty folder.
+   1. Download the [jar](https://github.com/AY2122S2-CS2103T-T09-2/tp/releases/tag/v1.4) file and copy into an empty folder.
 
    2. **For Windows:** Double-click the file to start the app.<br>
      
@@ -1071,6 +1147,8 @@ testers are expected to do more *exploratory* testing.
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Adding an applicant
 
@@ -1123,6 +1201,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### Add skills to an applicant
 
 1. Adding a skill to an applicant while all applicants are being shown in the *GUI*.
@@ -1149,6 +1229,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Editing an applicant
 
@@ -1188,6 +1270,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### View an applicant
 
 1. View an applicant while all applicants are being shown in the *GUI*.
@@ -1215,6 +1299,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Searching for applicant(s)
 
@@ -1250,9 +1336,13 @@ The commands in code blocks for this section are meant to be inputted in one lin
     10. Other incorrect search commands to try: `search`, `Search`, `search Bob`, `search w/Bob`, `search n/`<br>
         Expected: No applicant is displayed. Error details shown in the status message.
 
+<div style="page-break-after: always;"></div>
+
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Sorting list of applicants
 
@@ -1280,6 +1370,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### Flagging an applicant
 
 1. Flagging an applicant while all applicants are being shown in the *GUI*.
@@ -1306,6 +1398,8 @@ The commands in code blocks for this section are meant to be inputted in one lin
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Deleting an applicant
 
@@ -1363,3 +1457,5 @@ The commands in code blocks for this section are meant to be inputted in one lin
       Expected: The app starts with an empty list of applicants.
 
 [Back to top <img src="images/back-to-top-icon.png" width="25px" />](#table-of-contents)
+
+---
