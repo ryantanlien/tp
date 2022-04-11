@@ -1508,3 +1508,4 @@ The effort made in these areas can be evidenced from reading the rest of the Dev
   * This ties in with abstraction, where the group made commands as simple to execute as possible, so that fast typists can complete tasks easily and effectively.
   * Most commands in LinkedOUT are not lengthy, and require a minimal amount of typing to perform potentially complex tasks such as sorting and searching by multiple prefixes. 
     This is because the group put in much effort to hide these details from the user, choosing to handle such issues in implementation instead.
+    
