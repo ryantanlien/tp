@@ -23,13 +23,16 @@ Given below are my contributions to the project.
   
 <br>
 
+<div style = "page-break-after: always;"></div>
+
+
 * **Enchancements Implemented**:
   * Performed initial large-scale refactoring to starting AB3 project in file structure to pave foundation for AB3's modification into LinkedOUT.
     (Pull request [\#36](https://github.com/AY2122S2-CS2103T-T09-2/tp/pull/36)) 
     <br>
     These changes include:
     * Creating the applicant package in the model by moving `Person` related classes in the person package to the applicant package.
-    * Writing the key data class: Applicant.
+    * Writing the key data classes: `Applicant`, `Job` and `Round`. (Pull request [\#64](https://github.com/AY2122S2-CS2103T-T09-2/tp/pull/64))
     * Changing all `Person`-related usages in code to `Applicant`.
     * Changing all `address`-related usages in code to `linkedout`.
     * Credits: Zhikai and Ryan Cheung for aiding in integration.
@@ -57,9 +60,10 @@ Given below are my contributions to the project.
     * Setting up GitHub Team Repo.
     * Setting up Jekyll and GitHub project website using GitHub Pages
   * Set up v1.3 Product Demo in project management document.
-    
   
 <br>
+
+<div style = "page-break-after: always;"></div>
 
 * **Review/mentoring contributions**
   * Reviewed team PRs to ensure proper code architecture (Pull request [\#121](https://github.com/AY2122S2-CS2103T-T09-2/tp/pull/121))
