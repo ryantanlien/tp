@@ -1127,7 +1127,7 @@ testers are expected to do more *exploratory* testing.
 
 1. Initial launch.
 
-   1. Download the jar file and copy into an empty folder.
+   1. Download the [jar](https://github.com/AY2122S2-CS2103T-T09-2/tp/releases/tag/v1.4) file and copy into an empty folder.
 
    2. **For Windows:** Double-click the file to start the app.<br>
      
