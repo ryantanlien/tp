@@ -606,6 +606,8 @@ Given below is an example usage scenario and how the search mechanism behaves at
 3. The `SortComparator` is then passed into `Model#updateDefaultApplicantList()` to sort and display
    the list of sorted applicants in LinkedOUT.
 
+<div style="page-break-after: always;"></div>
+
 The following sequence diagram shows how the sort operation works:
 
 ![SortSequenceDiagram](images/SortSequenceDiagram.png)
